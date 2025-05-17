@@ -165,7 +165,7 @@ const WhyChoose = () => {
                 <td>$7,000 - $12,000+</td>
               </tr>
               <tr>
-                <td>Future Cost Projection</td>
+                <td>Future Cost</td>
                 <td>Stable</td>
                 <td>Rising with fossil fuel prices</td>
                 <td>Rising with land costs</td>
