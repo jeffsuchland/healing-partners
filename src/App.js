@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Components
 import Header from './components/Header';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 // Screens
 import Home from './screens/Home';
@@ -19,6 +20,7 @@ import Contact from './screens/Contact';
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <main>
         <Routes>
