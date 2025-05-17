@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { FaLeaf, FaMoneyBillWave, FaHeart, FaTree } from 'react-icons/fa';
+import Highcharts from 'highcharts'
+import HighchartsReact from 'highcharts-react-official'
 
 // Components
 import Hero from '../components/Hero';
@@ -9,6 +11,110 @@ import Section from '../components/Section';
 
 // Placeholder for hero image - replace with actual image path
 const heroImage = 'https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80';
+
+const options = {
+  chart: {
+    type: 'line'
+  },
+  title: {
+    text: 'Rising Cost of Propane'
+  },
+  subtitle: {
+    text: 'Source: ' +
+        '<a href="https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=M_EPLLPA_PRS_NUS_DPG&f=M" ' +
+        'target="_blank">U.S. Energy Information Administration</a>'
+},
+  xAxis: {
+    labels: {
+      step: 5
+    },
+    categories: [
+      1990,
+      1991,
+      1992,
+      1993,
+      1994,
+      1995,
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  series: [{
+    name: 'Cost of Propane',
+    showInLegend: false,
+    data: [
+      1.05,
+      0.92,
+      0.88,
+      0.92,
+      0.88,
+      0.89,
+      1.08,
+      1.08,
+      0.92,
+      0.94,
+      1.25,
+      1.34,
+      1.15,
+      1.41,
+      1.59,
+      1.84,
+      1.98,
+      2.19,
+      2.52,
+      2.22,
+      2.48,
+      2.68,
+      2.47,
+      2.41,
+      2.87,
+      2.15,
+      2.05,
+      2.39,
+      2.48,
+      2.18,
+      1.91,
+      2.48,
+      2.76,
+      2.56,
+      2.50,
+      2.71
+    ]
+  }],
+  yAxis: {
+    title: {
+        text: '$ / gallon'
+    }
+},
+}
 
 const WhyChoose = () => {
   return (
@@ -34,6 +140,12 @@ const WhyChoose = () => {
               <FaLeaf />
             </CategoryIcon>
             <CategoryTitle>Environmental Benefits</CategoryTitle>
+            <p>
+            <HighchartsReact
+              highcharts={Highcharts}
+              options={options}
+            />
+            </p>
             <BenefitsList>
               <BenefitItem>
                 <BenefitTitle>Carbon Negative</BenefitTitle>
