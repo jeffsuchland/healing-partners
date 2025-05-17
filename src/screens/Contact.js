@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { InlineWidget } from "react-calendly";
 
 // Components
 import Hero from '../components/Hero';
@@ -103,12 +104,9 @@ const Contact = () => {
               </SocialLink>
             </SocialLinks>
             
-            <MapContainer>
-              {/* In a real application, this would be a Google Maps or similar embed */}
-              <MapPlaceholder>
-                <MapText>Interactive Map Coming Soon</MapText>
-              </MapPlaceholder>
-            </MapContainer>
+            <p>
+            <InlineWidget url="https://calendly.com/mikemp109/30min" />
+            </p>
           </ContactInfo>
           
           <ContactForm onSubmit={handleSubmit}>
