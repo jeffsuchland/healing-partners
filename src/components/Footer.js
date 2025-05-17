@@ -55,8 +55,8 @@ const Footer = () => {
           <FooterColumn>
             <FooterHeading>Contact Us</FooterHeading>
             <ContactInfo>
-              <ContactItem>Phone: (555) 123-4567</ContactItem>
-              <ContactItem>Email: info@healingpartners.com</ContactItem>
+              <ContactItem>Phone: 509-460-9254</ContactItem>
+              <ContactItem>Email: brandon@threadgillmemorial.com</ContactItem>
               <ContactItem>123 Nature Way, Greenville, CA 90210</ContactItem>
             </ContactInfo>
             <CTAButton to="/pre-plan">Get Your Free Quote</CTAButton>

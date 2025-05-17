@@ -66,7 +66,7 @@ const Contact = () => {
                 </ContactMethodIcon>
                 <ContactMethodContent>
                   <ContactMethodLabel>Phone</ContactMethodLabel>
-                  <ContactMethodValue>(555) 123-4567</ContactMethodValue>
+                  <ContactMethodValue>509-460-9254</ContactMethodValue>
                 </ContactMethodContent>
               </ContactMethod>
               
@@ -76,7 +76,7 @@ const Contact = () => {
                 </ContactMethodIcon>
                 <ContactMethodContent>
                   <ContactMethodLabel>Email</ContactMethodLabel>
-                  <ContactMethodValue>info@healingpartners.com</ContactMethodValue>
+                  <ContactMethodValue>brandon@threadgillmemorial.com</ContactMethodValue>
                 </ContactMethodContent>
               </ContactMethod>
               
